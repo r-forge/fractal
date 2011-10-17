@@ -84,10 +84,7 @@
   title("KDE Perspective", adj=adj.main)
 
   splitplot(2,2,3)
-  if (is.R())
-    plot(x,style="contour",labcex=par("cex")*labex,nlevels=nlevels,add=TRUE)
-  else
-    plot(x,style="contour",labex=labex,nlevels=nlevels,add=TRUE)
+  plot(x,style="contour",labcex=par("cex")*labex,nlevels=nlevels,add=TRUE)
   title("KDE Contour", adj=adj.main)
 
   invisible(NULL)
@@ -138,13 +135,9 @@
   }
   else if (style == "perspective"){
 
-    if (is.R())
       persp(interp(at[,1], at[,2], as.vector(x)),
         xlab=xlab, ylab=ylab, zlab=zlab,
         axes=TRUE, theta=theta, phi=phi,...)
-    else
-      persp(interp(at[,1], at[,2], as.vector(x)),
-        xlab=xlab, ylab=ylab, zlab=zlab, ...)
   }
   else if (style == "contour"){
 
