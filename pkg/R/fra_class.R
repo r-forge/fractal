@@ -1,5 +1,5 @@
 ################################################
-## S+Fractal nonlinear dynamics constructor
+## FRACTAL nonlinear dynamics constructor
 ## functions and corresponding methods
 ##
 ##::::::::::::::::::::::::::::::::::::::::::::::
@@ -1089,7 +1089,7 @@
 
   xatt <- attributes(x)
 
-  z <- list(delta=xatt$delta, "innovations\nvariance"=xatt$innov, "tvfd\nsimulation"=as.vector(x))
+  z <- list(delta=xatt$delta, "innovations\nvariance"=xatt$innov, "tvfd\nsimulation"=asVector(x))
   plots <- c(delta, innovations.var, simulation)
   if (!any(plots))
     stop("Must specify at least one variable to plot: simulation, delta, or innovations.var")
@@ -1099,3 +1099,5 @@
 
   invisible(NULL)
 }
+
+"asVector" <- function(x) if (inherits(x, "signalSeries")) x@data else as.vector(x)

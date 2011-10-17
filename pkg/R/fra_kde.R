@@ -1,5 +1,5 @@
 ######################################################
-## S+Fractal multidimensional kernel density estimator
+## FRACTAL multidimensional kernel density estimator
 ##
 ## Class: KDE
 ## Constructor function: KDE
@@ -99,7 +99,7 @@
 {
 
   if (numCols(attr(x,"training")) == 1){
-  	plot(as.vector(attr(x,"at")), as.vector(x),
+  	plot(as.vector(attr(x,"at")), asVector(x),
   	  xlab=attr(x,"data.name"), ylab="KDE", ...)
     return(invisible(NULL))
   }
@@ -135,13 +135,13 @@
   }
   else if (style == "perspective"){
 
-      persp(interp(at[,1], at[,2], as.vector(x)),
+      persp(interp(at[,1], at[,2], asVector(x)),
         xlab=xlab, ylab=ylab, zlab=zlab,
         axes=TRUE, theta=theta, phi=phi,...)
   }
   else if (style == "contour"){
 
-    contour(interp(at[,1], at[,2], as.vector(x)),
+    contour(interp(at[,1], at[,2], asVector(x)),
       xlab=xlab, ylab=ylab, ...)
   }
 

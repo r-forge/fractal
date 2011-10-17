@@ -1,5 +1,5 @@
 ###################################################
-## S+Fractal determinism functionality
+## FRACTAL determinism functionality
 ##
 ##::::::::::::::::::::::::::::::::::::::::::::::
 ##

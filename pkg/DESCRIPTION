@@ -2,11 +2,23 @@ Package: fractal
 Type: Package
 Title: Fractal Time Series Modeling and Analysis
 Version: 1.1-0
-Date: 2007-1-01
+Date: 2011-10-16
 Author: William Constantine and Donald Percival (Applied Physics Laboratory, University of Washington)
 Maintainer: William Constantine <wlbconstan@gmail.com>
 Depends: R (>= 2.5.1), splus2R (>= 1.1-0), ifultools (>= 1.1-0), sapa (>= 1.1-0), wmtsa (>= 1.1-0), akima, MASS, scatterplot3d
-DependsSplus: ifultools (>= 1.0-2), sapa, wmtsa
-Description: Software to book in development entitled Fractal Time Series Analysis in S-PLUS and R, William Constantine and Donald B. Percival, Springer.
+Description: Stochastic fractal and deterministic chaotic time series analysis.
 License: GPL-2
-ZipData: no
+Collate: fra_chaos.R
+         fra_class.R
+         fra_detm.R
+         fra_dim.R
+         fra_fdp.R
+         fra_filt.R
+         fra_gnrc.R
+         fra_hurst.R
+         fra_kde.R
+         fra_model.R
+         fra_neig.R
+         fra_stny.R
+         fra_surr.R
+         fra_pkg.R
